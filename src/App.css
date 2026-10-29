@@ -1,0 +1,299 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", Arial, sans-serif;
+  color: #f8fafc;
+  background: #09090f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 50% 15%, #28111b 0%, transparent 48%),
+    #09090f;
+}
+
+.navbar {
+  max-width: 1120px;
+  margin: auto;
+  padding: 25px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 28px;
+  border-radius: 9px;
+  color: white;
+  background: #ff1744;
+  font-size: 17px;
+}
+
+.brand-accent {
+  color: #ff4767;
+}
+
+.nav-label {
+  color: #a1a1aa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 90px 24px 70px;
+}
+
+.hero-glow {
+  position: absolute;
+  z-index: -1;
+  top: 90px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #e11d4820;
+  filter: blur(90px);
+}
+
+.channel-avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 108px;
+  height: 108px;
+  border: 1px solid #ff526c70;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #f43f5e, #8b102b);
+  box-shadow: 0 0 65px #e11d4825;
+  font-size: 54px;
+  font-weight: 800;
+}
+
+.avatar-dot {
+  position: absolute;
+  right: -9px;
+  bottom: -7px;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 4px solid #09090f;
+  border-radius: 50%;
+  background: #ff1744;
+  font-size: 12px;
+}
+
+.eyebrow {
+  margin: 38px 0 16px;
+  color: #fb7185;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 66px);
+  line-height: 1.12;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #fb7185;
+}
+
+.description {
+  max-width: 540px;
+  margin: 23px 0 30px;
+  color: #a1a1aa;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.subscribe-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.subscribe-area button {
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.subscribe-area button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.privacy-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a1a1aa;
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+}
+
+.channel-id {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 35px;
+  padding: 14px 20px;
+  border: 1px solid #ffffff12;
+  border-radius: 12px;
+  background: #ffffff06;
+}
+
+.channel-id span {
+  color: #71717a;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.channel-id code {
+  color: #d4d4d8;
+  font-size: 12px;
+}
+
+.steps-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 24px 85px;
+}
+
+.steps-section h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.step-card {
+  padding: 25px;
+  border: 1px solid #ffffff12;
+  border-radius: 18px;
+  background: #ffffff05;
+}
+
+.step-number {
+  color: #fb7185;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.step-card h3 {
+  margin: 17px 0 8px;
+  font-size: 16px;
+}
+
+.step-card p {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 25px max(28px, calc((100% - 1064px) / 2));
+  border-top: 1px solid #ffffff12;
+  color: #71717a;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 22px 20px;
+  }
+
+  .channel-id code {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+}
